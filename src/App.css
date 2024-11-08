@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #c3c5ca;
+  color: black;
+  padding: 20px;
+  z-index: 10;
+}
+
+.company-logo {
+  width: 50px;
+  height: auto;
+}
+
+.header h1 {
+  margin: 0 auto;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.table-responsive {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticket-table th,
+.ticket-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.ticket-table th {
+  background-color: #f1f1f1;
+}
+
+.ticket-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ticket-table tr:hover {
+  background-color: #ddd;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  background-color: #c3c5ca;
+  color: black;
+  text-align: center;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.assign-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.assign-btn:hover {
+  background-color: #0056b3;
+}
